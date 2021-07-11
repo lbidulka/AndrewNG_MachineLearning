@@ -49,9 +49,11 @@ x = zeros(n, 1);
 %
 
 
+len_mapping = length(word_indices);
 
-
-
+for i = 1:len_mapping
+    x(word_indices(i)) = 1;
+end
 
 
 
